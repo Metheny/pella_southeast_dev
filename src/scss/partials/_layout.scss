@@ -7,9 +7,9 @@
 }
 
 #header {
-	@include background(linear-gradient(bottom center, #000, transparent),
-			url("http://www.pellageorgia.com/public/assets/img/header_bg_3.png"));
-	background:-ms-gradient(linear,50% 100%,50% 0,color-stop(0%,#000),color-stop(100%,transparent)),url(../img/header_bg_3.png) no-repeat center;
+	@include background(linear-gradient(bottom center, #000, transparent));
+	@include background(url("http://www.pellageorgia.com/public/assets/img/header_bg_3.png"));
+	// background:-ms-gradient(linear,50% 100%,50% 0,color-stop(0%,#000),color-stop(100%,transparent)),url(../img/header_bg_3.png) no-repeat center;
 	@include background-size(cover 100%);
 	background-position: center;
 	background-repeat: no-repeat;
