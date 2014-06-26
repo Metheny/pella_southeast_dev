@@ -2,10 +2,14 @@
 @import "compass/css3/images";
 @import "compass/css3/background-size";
 
+.container {
+	width: 100%;
+}
+
 #header {
 	@include background(linear-gradient(bottom center, #000, transparent),
 			url("../img/header_bg_3.png"));
-	@include background-size(auto 100%);
+	@include background-size(cover 100%);
 	background-position: center;
 	background-repeat: no-repeat;
 	/*height: $n16;*/
@@ -27,6 +31,8 @@
 #footer {
 	background: #fedc01;
 	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .l-float-left {
 	@include float-left();
