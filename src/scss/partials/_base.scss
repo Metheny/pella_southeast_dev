@@ -1,0 +1,70 @@
+@import "compass/reset";
+
+
+/*===================================
+=            Base Styles            =
+===================================*/
+
+
+
+/*==========  General Element Selectors  ==========*/
+
+
+@import "compass/typography/vertical_rhythm";
+
+
+html {
+	font-size: 100%;
+	background-color: black;
+}
+body {
+	font: $n1 $ff;
+	line-height: $n2;
+	background: black;
+	max-width: 100%;
+	
+}
+h1 {
+	font: $n6 $ff;
+	/*line-height: $n7;*/
+}
+h2 {
+	font: $n5 $ff;
+	/*line-height: $n8;*/
+}
+h3 {
+	font: $n4 $bff;
+	/*line-height: $n5;*/
+}
+h4 {
+	font: $n3 $ff;
+	/*line-height: $n5;*/
+}
+h5 {
+	font: $n2 $bff;
+	/*line-height: $n8;*/
+}
+figure {
+	font: $n2 $ff;
+}
+p {
+	font: $n2 $bff;
+	/*line-height: $n3;*/
+}
+ul {
+
+	display: block;
+	list-style: none;
+
+}
+li {
+	display: inline;
+	font: $n2 $bff;
+	/*line-height: $n3;*/
+	margin-left: $n4;
+	margin-right: $n4;
+}
+li p {
+	font: $n1 $bff;
+}
+

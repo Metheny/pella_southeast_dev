@@ -1,0 +1,233 @@
+/*==============================
+=            Header            =
+==============================*/
+@import "compass/css3/border-radius";
+@import "compass/css3/appearance";
+
+.giant-heading {
+	font-size: $n10;
+	line-height: $n11;
+	padding-top: $n6;
+	text-align: center;
+
+	@media only screen and (max-width: 1011px) {
+		font-size: $n9;
+	}
+	@media only screen and (max-width: 895px) {
+		font-size: $n8;
+		line-height: $n10;
+	}
+	@media only screen and (max-width: 690px) {
+		font-size: $n7;
+		line-height: $n9;
+	}
+	@media only screen and (max-width: 550px) {
+		font-size: $n6;
+	}
+}
+.cursive-figure {
+	display: block;
+	margin-bottom: $n4;
+	text-align: center;
+	.figure-caption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: -($n14 - $n3);
+		top: 0;;
+		margin-top: $n13;
+
+		@media only screen and (max-width: 1011px) {
+			margin-top: ($n12 + $n7);
+			margin-left: -($n13);
+		}
+		@media only screen and (max-width: 895px) {
+			margin-top: ($n13 - $n7);
+			margin-left: -($n12 + $n1);
+			font-size: $n1;
+		}
+		@media only screen and (max-width: 690px) {
+			margin-top: ($n12 - $n3);
+			margin-left: -($n12);
+			font-size: $n1;
+		}
+		@media only screen and (max-width: 550px) {
+			margin-top: ($n11);
+			margin-left: -($n11 - $n1);
+			font-size: ($n1 * .8);
+		}
+	}
+
+	.figure-logo {
+		display: block;
+		margin: 0 auto;
+		width: $n12;
+
+		@media only screen and (max-width: 1011px) {
+			width: $n11;
+		}
+		@media only screen and (max-width: 895px) {
+			width: $n10;
+		}
+		@media only screen and (max-width: 690px) {
+			width: $n9;
+		}
+		@media only screen and (max-width: 550px) {
+			width: $n8;
+		}
+	}
+}
+.tagline {
+	text-align: center;
+	margin-left: $n9;
+	margin-right: $n9;
+	margin-bottom: $n6;
+
+	@media only screen and (max-width: 895px) {
+		margin-left: $n7;
+		margin-right: $n7;
+		font-size: $n3;
+	}
+	@media only screen and (max-width: 550px) {
+		margin-left: $n6;
+		margin-right: $n6;
+		font-size: $n2;
+	}
+	@media only screen and (max-width: 405px) {
+		margin-left: $n4;
+		margin-right: $n4;
+		font-size: $n2;
+	}
+	@media only screen and (max-width: 715px) {
+		margin-bottom: $n5;
+	}
+}
+.btn-container {
+	text-align: center;
+	.btn {
+		display: inline-block;
+		@include border-radius(10px);
+		line-height: $n7;
+		background: #fedc01;
+		color: black;
+		width: $n13;
+		text-align: center;
+		padding-left: $n1;
+		padding-right: $n1;
+		font: $n2 $bff;
+		line-height: $n6;
+
+		@media only screen and (max-width: 715px) {
+			display: block;
+			margin: $n2 auto;
+		}
+
+		&:hover {
+			background: #0D55FF;
+			cursor: pointer;
+			color: white;
+		}
+	}
+	.btn-left {
+		margin-right: $n12;
+
+		@media only screen and (min-width: 900px) and (max-width: 1011px) {
+			margin-right: $n10;	
+		}
+		@media only screen and (max-width: 899px) {
+			margin-right: $n8;	
+		}
+		@media only screen and (max-width: 750px) {
+			margin-right: $n6;	
+		}
+		@media only screen and (max-width: 715px) {
+			margin-right: auto;
+		}
+
+	}
+}
+
+/*==================================
+=            Navigation            =
+==================================*/
+.nav-links {
+	text-align: center;
+	display: block;
+
+	li {
+		line-height: $n7;
+	}
+}
+
+/*====================================
+=            Our Projects            =
+====================================*/
+.our-projects-heading {
+	text-align: center;
+	padding-top: $n7;
+}
+
+/*==============================
+=            Footer            =
+==============================*/
+@import "compass/typography/lists/horizontal-list";
+@import "compass/css3/columns";
+
+.footer-heading {
+	display: block;
+	padding-top: $n4;
+	text-align: left;
+	margin-left: $n7;
+	line-height: $n7;
+	font-size: $n5;
+
+	@media only screen and (max-width: 1011px) {
+		margin-left: $n2;
+	}
+}
+.footer-tagline {
+	text-align: center;
+	margin-bottom: $n2;
+
+	@media only screen and (max-width: 1011px) {
+		margin-left: $n2;
+		text-align: left;
+	}
+}
+
+.footer-horizontal-list {
+	@include horizontal-list-container();
+	position: relative;
+	display: block;
+	padding-bottom: $n6;
+	@media only screen and (min-width: 1118px) {
+		margin-left: $n10;
+	}
+	@media only screen and (max-width: 963px) {
+		margin-left: 0;
+		width: 70%;
+	}
+
+
+	#jc {
+		@media only screen and (max-width: 964px) {
+			padding-right: ($n8 - ($n1 / 4));
+		}
+	}
+	div {
+		display: block;
+		@include horizontal-list-item(false, left);
+		text-align: left;
+		padding-left: $n2;
+
+		@media only screen and (max-width: 964px) {
+			padding-right: $n5;
+			padding-bottom: $n3;
+		}
+
+		p {
+			font-size: $n1;
+		}
+	}
+	
+}
