@@ -3,18 +3,20 @@
 @import "compass/css3/background-size";
 
 .container {
-	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
 }
 
 #header {
-	$experimental-support-for-svg: true;
+	// $experimental-support-for-svg: true;
 	@include background(linear-gradient(bottom center, #000, transparent),
 		url("http://www.pellageorgia.com/public/assets/img/header_bg_3.png"));
 	// background:-ms-gradient(linear,50% 100%,50% 0,color-stop(0%,#000),color-stop(100%,transparent)),url(../img/header_bg_3.png) no-repeat center;
 	@include background-size(cover 100%);
 	background-position: center;
 	background-repeat: no-repeat;
-	/*height: $n16;*/
 	width: 100%;
 	color: white;
 	padding-bottom: $n7;

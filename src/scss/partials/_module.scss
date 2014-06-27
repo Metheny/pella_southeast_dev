@@ -24,6 +24,9 @@
 	@media only screen and (max-width: 550px) {
 		font-size: $n6;
 	}
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+		font-size: $n6;
+	}
 }
 .cursive-figure {
 	display: block;
@@ -52,6 +55,11 @@
 			font-size: $n1;
 		}
 		@media only screen and (max-width: 550px) {
+			margin-top: ($n11);
+			margin-left: -($n11 - $n1);
+			font-size: ($n1 * .8);
+		}
+		@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 			margin-top: ($n11);
 			margin-left: -($n11 - $n1);
 			font-size: ($n1 * .8);
@@ -185,6 +193,9 @@
 	@media only screen and (max-width: 1011px) {
 		margin-left: $n2;
 	}
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+			font-size: ($n4);
+		}
 }
 .footer-tagline {
 	text-align: center;
